@@ -1,0 +1,31 @@
+﻿<Window x:Class="Kolokwium.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="379.55" Width="511.696">
+    <Grid Margin="0,0,2,59">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="251*"/>
+            <ColumnDefinition Width="264*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="PUstaw" Content="Ustaw Rodzaj" HorizontalAlignment="Left" Margin="28,29,0,0" VerticalAlignment="Top" Width="85" Height="23"/>
+        <Button x:Name="PDodaj" Content="Dodaj stacje" HorizontalAlignment="Left" Margin="28,70,0,0" VerticalAlignment="Top" Width="85" Height="23" RenderTransformOrigin="0.51,2.72"/>
+        <Button x:Name="PUsun" Content="Usun" HorizontalAlignment="Left" Margin="28,98,0,0" VerticalAlignment="Top" Width="85" Height="23"/>
+        <Button x:Name="PPowrot" Content="Powrot" HorizontalAlignment="Left" Margin="28,149,0,0" VerticalAlignment="Top" Width="85" Height="23" RenderTransformOrigin="0.539,-0.12"/>
+        <Button x:Name="PZapisz" Content="Zapisz" HorizontalAlignment="Left" Margin="28,286,0,-48" VerticalAlignment="Top" Width="85" Height="23"/>
+        <Button x:Name="PWybierz" Content="Wybierz" HorizontalAlignment="Left" Margin="166.175,288,0,-27" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
+        <ComboBox x:Name="CRodzaj" HorizontalAlignment="Left" Margin="136.175,227,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1" SelectionChanged="CRodzaj_SelectionChanged">
+            <ComboBoxItem Content="Normalna" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Last Minute" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <TextBox x:Name="TNazwa" HorizontalAlignment="Left" Height="23" Margin="136.175,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label x:Name="LNazwa" Content="Nazwa" HorizontalAlignment="Left" Margin="136.175,10,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="LOplata" Content="Oplata" HorizontalAlignment="Left" Margin="136.175,84,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <ComboBox x:Name="COplata" HorizontalAlignment="Left" Margin="136,129,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
+            <ComboBoxItem Content="Tak" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Nie" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Label x:Name="LRodzaj" Content="Rodzaj" HorizontalAlignment="Left" Margin="142.175,201,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock x:Name="Tekst" HorizontalAlignment="Left" Margin="150,36,0,-20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="245" Width="220" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
